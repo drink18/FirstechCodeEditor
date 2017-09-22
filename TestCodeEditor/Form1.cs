@@ -25,10 +25,15 @@ namespace TestCodeEditor
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var od = new OpenFileDialog();
+            od.Filter = "src files (*.src) | *.src|header files (*.h)|*.h";
+            od.FilterIndex = 1;
+            od.RestoreDirectory = true;
 
-            string code = "int main(int nargs, char** nargs)\n {\n return 0;\n }\n";
-
-            firstechCodeEditor1.Editor.Text = code;
+            if(od.ShowDialog() == DialogResult.OK)
+            {
+                firstechCodeEditor1.OpenFile(od.FileName);
+            }
         }
     }
 }

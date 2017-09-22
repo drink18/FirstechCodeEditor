@@ -98,12 +98,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Completer\ClangUtils.cs" />
+    <Compile Include="Completer\Extension.cs" />
+    <Compile Include="Completer\FunctionVisitor.cs" />
     <Compile Include="FirstechCodeEditor.xaml.cs">
       <DependentUpon>FirstechCodeEditor.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FirstechCodeEditor_File.cs" />
+    <Compile Include="FirstechCodeEditor_Key.cs" />
+    <Compile Include="Completer\ICXCursorVisitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

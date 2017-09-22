@@ -31,10 +31,11 @@ namespace FirstechCodeEditor
         {
             InitializeComponent();
             textEditor.ShowLineNumbers = true;
-            parseTranslationUnit();
+
+            textEditor.TextArea.KeyDown += TextArea_KeyDown;
+            textEditor.TextArea.TextEntered += TextArea_TextEntered;
+
         }
-        
-        public void parseTranslationUnit()
-        { }
+
     }
 }
