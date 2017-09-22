@@ -22,5 +22,13 @@ namespace TestCodeEditor
         {
             Debug.WriteLine(firstechCodeEditor1.Editor.Text);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            string code = "int main(int nargs, char** nargs)\n {\n return 0;\n }\n";
+
+            firstechCodeEditor1.Editor.Text = code;
+        }
     }
 }
