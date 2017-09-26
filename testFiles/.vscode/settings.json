@@ -1,0 +1,8 @@
+{
+    "files.autoGuessEncoding": true,
+    "files.associations": {
+        "*.src": "c"
+    },
+    "editor.snippetSuggestions": "bottom",
+    "C_Cpp.intelliSenseEngine": "Default"
+}

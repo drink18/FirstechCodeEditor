@@ -81,7 +81,7 @@ double TimeToClkCycle(double timeValue, double timeUnit)
 /*返回值：采样时间，单位us                         */
 /*CAUTION:此函数不同于RxChannelAcquirePara()!!!!!!!!!!!!!       */
 /**************************************************/
-double AcquireDuration(double __samplePeriod,double __samplePoint)
+double AcquireDuration(double __samplePeriod, double __samplePoint)
 {
 
     double __waveReceiveTime;
