@@ -4,5 +4,6 @@
         "*.src": "c"
     },
     "editor.snippetSuggestions": "bottom",
-    "C_Cpp.intelliSenseEngine": "Default"
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.errorSquiggles": "Disabled"
 }
